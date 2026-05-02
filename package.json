@@ -1,11 +1,14 @@
 {
-  "name": "rate-limiter",
-  "version": "1.0.0",
+  "name": "token-bucket-limiter",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/server/app.ts"
+    "dev": "tsx watch src/server/app.ts",
+    "build": "tsc",
+    "start": "node dist/server/app.js"
   },
   "keywords": [],
   "author": "",
